@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #1a5fdb;
+  --color-brand-600: #1550bd;
+  --color-brand-50: #eaf1fd;
+  --color-brand-100: #d6e4fb;
+  --color-navy: #15294a;
+  --color-navy-700: #1e3a60;
+  --color-ink: #15243b;
+  --color-body: #334155;
+  --color-muted: #64748b;
+  --color-faint: #94a3b8;
+  --color-canvas: #f2f5fa;
+  --color-line: #e3e8ef;
+  --color-ok: #15805a;
+  --color-ok-50: #e4f4ec;
+  --color-ok-200: #a9d9c1;
+  --color-warn: #9a5b00;
+  --color-warn-50: #fdf3cd;
+  --color-warn-200: #f0d58a;
+  --color-bad: #c43449;
+  --color-bad-50: #fbecee;
+  --color-bad-200: #eeb1ba;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(0); opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { transform: translateY(190px); opacity: 0.2; }
+}
+
+@keyframes toast-in {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { transform: translateY(6px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 280ms ease-out both;
+}

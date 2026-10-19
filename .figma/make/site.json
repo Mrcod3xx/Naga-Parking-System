@@ -1,0 +1,10 @@
+{
+  "description": "Manage parking lot availability and reservations efficiently with a user-friendly interface designed for drivers and parking operators.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
